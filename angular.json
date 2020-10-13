@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-registration-login-example"
+    }
+  },
+  "defaultProject": "angular-registration-login-example",
+  "cli": {
+    "analytics": "77012ceb-e03f-4912-9182-4e8bf0715ce8"
+  }
 }

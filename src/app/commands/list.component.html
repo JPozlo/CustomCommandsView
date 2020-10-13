@@ -1,0 +1,32 @@
+<h1>Commands</h1>
+<a routerLink="add" class="btn btn-sm btn-success mb-2">Add Command</a>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th style="width: 30%">ID</th>
+      <th style="width: 30%">Line</th>
+      <th style="width: 30%">How To</th>
+      <th style="width: 10%"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let command of commands">
+      <td>{{command.id}}</td>
+      <td>{{command.line}}</td>
+      <td>{{command.howTo}}</td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/{{command.id}}" class="btn btn-sm btn-primary mr-1">Edit</a>
+        <button (click)="deleteCommand(command.id)" class="btn btn-sm btn-danger btn-delete-user"
+          [disabled]="command.isDeleting">
+          <span *ngIf="command.isDeleting" class="spinner-border spinner-border-sm"></span>
+          <span *ngIf="!command.isDeleting">Delete</span>
+        </button>
+      </td>
+    </tr>
+    <tr *ngIf="!commands">
+      <td colspan="4" class="text-center">
+        <span class="spinner-border spinner-border-lg align-center"></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
