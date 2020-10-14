@@ -3,10 +3,11 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th style="width: 30%">ID</th>
-      <th style="width: 30%">Line</th>
-      <th style="width: 30%">How To</th>
-      <th style="width: 10%"></th>
+      <th style="width: 19%">ID</th>
+      <th style="width: 19%">Line</th>
+      <th style="width: 19%">How To</th>
+      <th style="width: 19%">Platform</th>
+      <th style="width: 24%"></th>
     </tr>
   </thead>
   <tbody>
@@ -14,6 +15,7 @@
       <td>{{command.id}}</td>
       <td>{{command.line}}</td>
       <td>{{command.howTo}}</td>
+      <td>{{command.platform}}</td>
       <td style="white-space: nowrap">
         <a routerLink="edit/{{command.id}}" class="btn btn-sm btn-primary mr-1">Edit</a>
         <button (click)="deleteCommand(command.id)" class="btn btn-sm btn-danger btn-delete-user"
