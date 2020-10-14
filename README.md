@@ -1,5 +1,3 @@
-# angular-10-registration-login-example
+# Custom Commands Front-End with Angular.
 
-Angular 10 - User Registration and Login Example
-
-To see a demo and further details go to https://jasonwatmore.com/post/2020/07/18/angular-10-user-registration-and-login-example-tutorial
+For the live web app go to: http://51.132.187.202
